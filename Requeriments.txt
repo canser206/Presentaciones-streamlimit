@@ -1,5 +1,2 @@
-streamlit
-plotly
-pandas
-openpyxl
-numpy
+pip install streamlit plotly pandas openpyxl numpy
+      streamlit run dashboard_coexccol.py
