@@ -117,7 +117,7 @@ st.markdown("""
 # ── PRODUCCIÓN HISTÓRICA ──────────────────────────────────────────────────────
 prod_data = pd.DataFrame({
     "Mes": ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
-    "Toneladas": [1698, 1894, 2000, 1800, 1964],
+    "Toneladas": [1698.66, 1830.15, 1898.77, 1800.91, 1964.11],
     "Meta": [2156.9, 2156.9, 2156.9, 2156.9, 2156.9],
     "Ausencias_pct": [17, 15, 19, 23, 16],
     "Trabajadores": [65, 69, 80, 78, 82],
@@ -286,7 +286,7 @@ ppto_social = pd.DataFrame([
 
 # ── SUBSIDIO ALIMENTACIÓN MAYO ────────────────────────────────────────────────
 subsidio = {
-    "toneladas": 1964,
+    "toneladas": 1964.11,
     "valor_tonelada": 290000,
     "ingreso_total": 569_560_000,
     "subsidio_total": 16_861_250,
@@ -361,7 +361,7 @@ with st.sidebar:
                 border-radius:10px;padding:12px;margin-top:12px'>
         <div style='color:#f5a623;font-weight:700;font-size:0.85rem'>📊 PRODUCCIÓN MAYO</div>
         <div style='color:#fff;font-size:1.6rem;font-weight:900;margin:6px 0'>1,964 TON</div>
-        <div style='color:#4ade80;font-size:0.85rem'>+127 ton vs Abril ↑7.1%</div>
+        <div style='color:#4ade80;font-size:0.85rem'>+193 ton vs Abril ↑9.82%</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -396,7 +396,7 @@ if seccion == "🏠 Resumen Ejecutivo":
     c1, c2, c3, c4, c5 = st.columns(5)
     c1.metric("⛏️ Producción Mayo",  "1,964 TON",    "+193 vs Abril")
     c2.metric("🎯 Cumplimiento Meta", "91.05%",         "+7.6pp vs Abril")
-    c3.metric("💵 Costo/Tonelada",   "$72,841 COP",   "")
+    c3.metric("💵 Costo/Tonelada",   "$274,483 COP",   "")
     c4.metric("👷 Personal Activo",  "82",            "+4 vs Abril")
     c5.metric("🚫 Ausentismo Mayo",  "16%",           "-7% Abril")
     
