@@ -334,7 +334,7 @@ with st.sidebar:
     <div style='text-align:center; padding: 10px 0 20px'>
         <div style='font-size:3rem'>⛏️</div>
         <div style='color:#f5a623;font-weight:900;font-size:1.1rem;letter-spacing:2px'>COEXCCOL</div>
-        <div style='color:#94a3b8;font-size:0.8rem;margin-top:4px'>MINA PAJARITA · MAYO 2026</div>
+        <div style='color:#94a3b8;font-size:0.8rem;margin-top:4px'>MINA COEXCCOL · MAYO 2026</div>
     </div>
     """, unsafe_allow_html=True)
     
@@ -381,7 +381,7 @@ with st.sidebar:
 st.markdown("""
 <div class='main-header'>
     <h1>⛏️ DASHBOARD DE GESTIÓN HUMANA</h1>
-    <p>COMPAÑÍA EXPORTADORA DE CARBONES DE COLOMBIA SAS · FRENTE PAJARITA · COSTA RICA · MAYO 2026</p>
+    <p>COMPAÑÍA EXPORTADORA DE CARBONES DE COLOMBIA SAS · COSTA RICA · MAYO 2026</p>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("---")
