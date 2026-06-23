@@ -19,7 +19,7 @@ from datetime import datetime
 
 # ─── CONFIGURACIÓN GLOBAL ────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="COEXCCOL · Dashboard RH 2026",
+    page_title="COEXCCOL · RH 2026",
     page_icon="⛏️",
     layout="wide",
     initial_sidebar_state="expanded",
