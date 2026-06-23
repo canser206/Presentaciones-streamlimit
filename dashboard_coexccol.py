@@ -117,7 +117,7 @@ st.markdown("""
 # ── PRODUCCIÓN HISTÓRICA ──────────────────────────────────────────────────────
 prod_data = pd.DataFrame({
     "Mes": ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
-    "Toneladas": [1698, 1894, 2000, 1800, 1927],
+    "Toneladas": [1698, 1894, 2000, 1800, 1964],
     "Meta": [2156.9, 2156.9, 2156.9, 2156.9, 2156.9],
     "Ausencias_pct": [17, 15, 19, 23, 23],
     "Trabajadores": [65, 69, 80, 78, 82],
@@ -286,12 +286,12 @@ ppto_social = pd.DataFrame([
 
 # ── SUBSIDIO ALIMENTACIÓN MAYO ────────────────────────────────────────────────
 subsidio = {
-    "toneladas": 1927,
-    "valor_tonelada": 260000,
-    "ingreso_total": 501_020_000,
-    "subsidio_total": 30_483_500,
-    "costo_por_ton": 15819.15,
-    "pct_ingreso": 6.08,
+    "toneladas": 1964,
+    "valor_tonelada": 290000,
+    "ingreso_total": 569_560_000,
+    "subsidio_total": 16_861_250,
+    "costo_por_ton": 8585,
+    "pct_ingreso": 5.09,
 }
 
 # ── DATOS APOYO MAYO (costo personal apoyo vs producción) ────────────────────
@@ -319,7 +319,7 @@ apoyo_q2 = {
 }
 
 total_apoyo_mayo = sum(apoyo_q1.values()) + sum(apoyo_q2.values())
-costo_apoyo_por_ton = total_apoyo_mayo / 1927
+costo_apoyo_por_ton = total_apoyo_mayo / 1964
 
 apoyo_df = pd.DataFrame([
     {"Rol": k, "Q1": v, "Q2": apoyo_q2.get(k, 0)} for k, v in apoyo_q1.items()
@@ -360,7 +360,7 @@ with st.sidebar:
     <div style='background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.3);
                 border-radius:10px;padding:12px;margin-top:12px'>
         <div style='color:#f5a623;font-weight:700;font-size:0.85rem'>📊 PRODUCCIÓN MAYO</div>
-        <div style='color:#fff;font-size:1.6rem;font-weight:900;margin:6px 0'>1,927 TON</div>
+        <div style='color:#fff;font-size:1.6rem;font-weight:900;margin:6px 0'>1,964 TON</div>
         <div style='color:#4ade80;font-size:0.85rem'>+127 ton vs Abril ↑7.1%</div>
     </div>
     """, unsafe_allow_html=True)
@@ -394,9 +394,9 @@ if seccion == "🏠 Resumen Ejecutivo":
     
     # KPIs principales
     c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("⛏️ Producción Mayo",  "1,927 TON",    "+127 vs Abril")
-    c2.metric("🎯 Cumplimiento Meta", "89.3%",         "+5.8pp vs Abril")
-    c3.metric("💵 Costo/Tonelada",   "$48,514 COP",   "")
+    c1.metric("⛏️ Producción Mayo",  "1,964 TON",    "+193 vs Abril")
+    c2.metric("🎯 Cumplimiento Meta", "91.05%",         "+7.6pp vs Abril")
+    c3.metric("💵 Costo/Tonelada",   "$72,841 COP",   "")
     c4.metric("👷 Personal Activo",  "82",            "+4 vs Abril")
     c5.metric("🚫 Ausentismo Mayo",  "23%",           "= Abril")
     
@@ -827,7 +827,7 @@ elif seccion == "🔗 Producción vs Ausentismo":
                 <li>Febrero (15% aus.) → <b style='color:#4ade80'>1,894 ton</b></li>
                 <li>Marzo (19% aus.) → <b style='color:#4ade80'>2,000 ton</b> (pico, +80 trabajadores)</li>
                 <li>Abril (23% aus.) → <b style='color:#f87171'>1,800 ton</b> (-200 vs Marzo)</li>
-                <li>Mayo (23% aus.) → <b style='color:#f5a623'>1,927 ton</b> (+82 trabaj.)</li>
+                <li>Mayo (23% aus.) → <b style='color:#f5a623'>1,964 ton</b> (+82 trabaj.)</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -971,10 +971,10 @@ elif seccion == "💰 Costos & Subsidio":
     
     with tab1:
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("💵 Costo Total Operativo",  "$93,487,221",  "Mayo 2026")
-        c2.metric("⛏️ Costo por Tonelada",    "$48,514 COP",  "")
+        c1.metric("💵 Costo Total Operativo",  "$143,060,100",  "Mayo 2026")
+        c2.metric("⛏️ Costo por Tonelada",    "$72,730",  "")
         c3.metric("🏭 Nómina Total Mayo",     "$119,805,302", "")
-        c4.metric("🔩 Costo Retro/Ton",      "$1,353 COP",   "")
+        c4.metric("🔩 Costo Retro/Ton",      "$1,327 COP",   "")
         
         col1, col2 = st.columns([1.2, 1])
         with col1:
@@ -1029,7 +1029,7 @@ elif seccion == "💰 Costos & Subsidio":
         
         c1, c2, c3 = st.columns(3)
         c1.metric("💵 Total Nómina Apoyo Mayo",  f"${total_apoyo_mayo:,.0f} COP", "")
-        c2.metric("⛏️ Producción Mayo",          "1,927 TON", "")
+        c2.metric("⛏️ Producción Mayo",          "1,964 TON", "")
         c3.metric("💰 Costo Apoyo por Tonelada", f"${costo_apoyo_por_ton:,.0f} COP", "")
         
         fig = go.Figure()
@@ -1105,7 +1105,7 @@ elif seccion == "💰 Costos & Subsidio":
         
         # Desglose
         data_sub = {
-            "Concepto": ["Ingreso Total Producción\n(1,927 ton × $260,000)", "Subsidio Alimentación", "Costo Restante Disponible"],
+            "Concepto": ["Ingreso Total Producción\n(1,964 ton × $260,000)", "Subsidio Alimentación", "Costo Restante Disponible"],
             "Valor": [subsidio["ingreso_total"], subsidio["subsidio_total"],
                       subsidio["ingreso_total"] - subsidio["subsidio_total"]],
         }
@@ -1132,7 +1132,7 @@ elif seccion == "💰 Costos & Subsidio":
         
         st.success(f"""
         **Conclusión Subsidio de Alimentación:**
-        En Mayo 2026 con **1,927 toneladas** producidas a un valor de **$260,000/ton**,
+        En Mayo 2026 con **1,964 toneladas** producidas a un valor de **$260,000/ton**,
         el ingreso total fue de **${subsidio['ingreso_total']/1e6:.1f}M COP**.
         El subsidio de alimentación pagado fue de **${subsidio['subsidio_total']/1e6:.2f}M COP**,
         lo que representa **${subsidio['costo_por_ton']:,.2f} COP por tonelada producida** y apenas
