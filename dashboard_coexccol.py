@@ -971,9 +971,9 @@ elif seccion == "💰 Costos & Subsidio":
     
     with tab1:
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("💵 Costo Total Operativo",  "$143,060,100",  "Mayo 2026")
-        c2.metric("⛏️ Costo por Tonelada",    "$72,730",  "")
-        c3.metric("🏭 Nómina Total Mayo",     "$119,805,302", "")
+        c1.metric("💵 Costo Total Operativo",  "$93,487,221",  "Mayo 2026")
+        c2.metric("⛏️ Costo por Tonelada",    "$274,483",  "")
+        c3.metric("🏭 Nómina Total Mayo",     "$157,253,477", "")
         c4.metric("🔩 Costo Retro/Ton",      "$1,327 COP",   "")
         
         col1, col2 = st.columns([1.2, 1])
