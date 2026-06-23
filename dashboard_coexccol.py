@@ -398,7 +398,7 @@ if seccion == "🏠 Resumen Ejecutivo":
     c2.metric("🎯 Cumplimiento Meta", "91.05%",         "+7.6pp vs Abril")
     c3.metric("💵 Costo/Tonelada",   "$72,841 COP",   "")
     c4.metric("👷 Personal Activo",  "82",            "+4 vs Abril")
-    c5.metric("🚫 Ausentismo Mayo",  "23%",           "= Abril")
+    c5.metric("🚫 Ausentismo Mayo",  "16%",           "-7% Abril")
     
     st.markdown("---")
     
