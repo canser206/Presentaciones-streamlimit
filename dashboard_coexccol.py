@@ -380,7 +380,7 @@ with st.sidebar:
 # ─── HEADER PRINCIPAL ─────────────────────────────────────────────────────────
 st.markdown("""
 <div class='main-header'>
-    <h1>⛏️ DASHBOARD DE GESTIÓN HUMANA</h1>
+    <h1>⛏️ GESTIÓN HUMANA</h1>
     <p>COMPAÑÍA EXPORTADORA DE CARBONES DE COLOMBIA SAS · COSTA RICA · MAYO 2026</p>
 </div>
 """, unsafe_allow_html=True)
