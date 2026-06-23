@@ -827,7 +827,7 @@ elif seccion == "🔗 Producción vs Ausentismo":
                 <li>Febrero (15% aus.) → <b style='color:#4ade80'>1,894 ton</b></li>
                 <li>Marzo (19% aus.) → <b style='color:#4ade80'>2,000 ton</b> (pico, +80 trabajadores)</li>
                 <li>Abril (23% aus.) → <b style='color:#f87171'>1,800 ton</b> (-200 vs Marzo)</li>
-                <li>Mayo (23% aus.) → <b style='color:#f5a623'>1,964 ton</b> (+82 trabaj.)</li>
+                <li>Mayo (16% aus.) → <b style='color:#f5a623'>1,964 ton</b> (+82 trabaj.)</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -1322,7 +1322,7 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align:center;padding:20px 0 10px;color:#475569'>
     <div style='color:#f5a623;font-weight:700;margin-bottom:6px'>⛏️ COEXCCOL – COMPAÑÍA EXPORTADORA DE CARBONES DE COLOMBIA SAS</div>
-    <div style='font-size:0.82rem'>FRENTE PAJARITA · CENTRO COSTA RICA · BOYACÁ, COLOMBIA · Elaborado: Jefa de RR.HH. y Jefa de Proyecto · Mayo 2026</div>
+    <div style='font-size:0.82rem'>CENTRO COSTA RICA · BOYACÁ, COLOMBIA · Elaborado: Jefa de RR.HH. y Jefa de Proyecto · Mayo 2026</div>
     <div style='font-size:0.75rem;margin-top:4px;color:#334155'>Dashboard de Gestión Humana · Generado con datos reales de nómina, ausentismo y producción</div>
 </div>
 """, unsafe_allow_html=True)
