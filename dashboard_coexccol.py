@@ -1,6 +1,6 @@
 """
 ================================================================================
-  DASHBOARD DE GESTIÓN HUMANA – COEXCCOl | MAYO 2026
+  GESTIÓN HUMANA – COEXCCOl | MAYO 2026
   Script Streamlit Legendario – Elaborado con datos reales de los archivos
   de productividad, ausentismo, consolidado ing-egre e indicadores RH
   
