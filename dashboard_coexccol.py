@@ -1,6 +1,6 @@
 """
 ================================================================================
-  DASHBOARD DE GESTIÓN HUMANA – COEXCCOL MINA PAJARITA | MAYO 2026
+  DASHBOARD DE GESTIÓN HUMANA – COEXCCOl | MAYO 2026
   Script Streamlit Legendario – Elaborado con datos reales de los archivos
   de productividad, ausentismo, consolidado ing-egre e indicadores RH
   
@@ -119,7 +119,7 @@ prod_data = pd.DataFrame({
     "Mes": ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
     "Toneladas": [1698, 1894, 2000, 1800, 1964],
     "Meta": [2156.9, 2156.9, 2156.9, 2156.9, 2156.9],
-    "Ausencias_pct": [17, 15, 19, 23, 23],
+    "Ausencias_pct": [17, 15, 19, 23, 16],
     "Trabajadores": [65, 69, 80, 78, 82],
     "Cumplimiento_pct": [78.7, 87.8, 92.7, 83.5, 89.3],
 })
@@ -310,7 +310,7 @@ apoyo_q2 = {
     "MALACATERO TORRES":        1665366,
     "TOLVERO CHAVARRO":          917887,
     "TOLVERO CATALAN":          1481610,
-    "TOLVERO ARCINIEGAS":        875445,
+    "PORTERO ARCINIEGAS":        875445,
     "PATIERO ALIRIO MENDEZ":     915237,
     "PATIERO GAMEZ FRAGOSO":     915237,
     "RETRO-OPERADOR":           1334605,
